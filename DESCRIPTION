@@ -1,0 +1,56 @@
+Package: synGE
+Type: Package
+Title: Generation and Evaluation of Synthetic Tabular Health Data: a comprehensive framework
+Version: 0.1.0
+Authors@R: c(
+    person("Mieke L.M.", "Bentvelzen", email = "m.l.m.bentvelzen@umcutrecht.nl",
+           role = c("aut", "cre")),
+    person("Laura", "Jochim", role = "aut"),
+    person("Said", "el Bouhaddani", role = "aut"))
+Description: Provides functions to generate synthetic tabular data using
+    sequential conditional synthesis (synthpop), vine copulas, conditional
+    tabular generative adversarial networks (CTGAN), and tabular variational
+    autoencoders (TVAE). Compares real and synthetic data using complementary
+    metrics for marginal fidelity, bivariate associations, multivariate
+    similarity, prediction-based distinguishability, and distance-based
+    privacy screening. Intended for research on synthetic healthcare data;
+    it does not establish that generated data are safe to disclose.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends:
+    R (>= 4.1.0)
+Imports:
+    caret,
+    dplyr,
+    fasano.franceschini.test,
+    ggplot2,
+    glmnet,
+    graphics,
+    purrr,
+    stats,
+    tibble
+Suggests:
+    cluster,
+    DataSimilarity,
+    e1071,
+    FNN,
+    ggnewscale,
+    ggrepel,
+    gower,
+    isotree,
+    kde1d,
+    lme4,
+    pROC,
+    proxy,
+    randomForest,
+    reticulate,
+    rvinecopulib,
+    scales,
+    synthpop,
+    testthat (>= 3.0.0),
+    tidyr,
+    transport
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+URL: https://github.com/mbentvelzen/synGE
+BugReports: https://github.com/mbentvelzen/synGE/issues
